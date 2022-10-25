@@ -12,7 +12,7 @@ public class Reservation03 {
 	private Date checkIn;
 	private Date checkOut;
 	
-private static SimpleDateFormat sdf = new SimpleDateFormat("dd/MM/yyyy");
+	private static SimpleDateFormat sdf = new SimpleDateFormat("dd/MM/yyyy");
 	
 	public Reservation03(Integer roomNumber, Date checkIn, Date checkOut) {
 		if (!checkOut.after(checkIn)) {

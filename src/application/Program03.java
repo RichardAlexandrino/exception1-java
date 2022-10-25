@@ -42,6 +42,9 @@ public class Program03 {
 		catch (DomainException03 e) {
 			System.out.println("Error in reservation: " + e.getMessage());
 		}
+		catch (RuntimeException e) {
+			System.out.println("Unexpected error");
+		}
 			
 		sc.close();
 		
